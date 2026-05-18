@@ -39,20 +39,8 @@
     border-radius: 3px;
     font-size: 0.9em;
   }
-  .stats {
-    background: #f0f8ff;
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 30px;
-  }
-  .footer {
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
-    color: #999;
-    font-size: 12px;
-  }
+  .stats { background: #f0f8ff; padding: 15px; border-radius: 8px; margin-top: 30px; }
+  .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; color: #999; font-size: 12px; }
 </style>
 </head>
 <body>
@@ -61,7 +49,8 @@
 <thead>
 <tr><th>名称</th><th>来源</th><th>描述</th></tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><strong>agent-browser</strong></td>
 <td>Store</td>
 <td>AI智能体的浏览器自动化CLI工具。用于与网页交互，包括页面导航、填写表单、点击按钮、截图、数据抓取、Web应用测试等浏览器自动化场景。</td>
@@ -83,7 +72,8 @@
 <thead>
 <tr><th>名称</th><th>来源</th><th>描述</th></tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><strong>agent-team-manager</strong></td>
 <td>Store</td>
 <td>多智能体团队管理。创建、查看、修改、删除 CountBot 的多智能体团队，管理团队成员（角色）和团队级自定义模型配置。当用户要新建 Pipeline/Graph/Council 团队、调整成员分工、修改依赖关系、开关技能系统、设置团队专属模型时使用。</td>
@@ -120,7 +110,8 @@
 <thead>
 <tr><th>名称</th><th>来源</th><th>描述</th></tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><strong>baidu-search</strong></td>
 <td>Store</td>
 <td>百度 AI 搜索。支持网页搜索、百度百科、秒懂百科、AI 智能生成四种模式。自动包含当前日期上下文。当用户要求搜索信息、查询百科、获取最新资讯、搜索新闻、查找资料时使用。</td>
@@ -142,7 +133,8 @@
 <thead>
 <tr><th>名称</th><th>来源</th><th>描述</th></tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><strong>html-ppt</strong></td>
 <td>Store</td>
 <td>HTML PPT Studio——使用纯静态HTML制作专业演示文稿。支持多种样式、布局和动画效果，全部由模板驱动。当用户要求制作演示文稿、PPT、幻灯片、演讲稿、分享稿、小红书图文、技术分享PPT等场景时使用。</td>
@@ -184,7 +176,8 @@
 <thead>
 <tr><th>名称</th><th>来源</th><th>描述</th></tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><strong>image-analysis</strong></td>
 <td>Store</td>
 <td>图片分析与识别，可分析本地图片、网络图片、视频、文件。适用于 OCR、物体识别、场景理解等。当用户发送图片或要求分析图片时必须使用此技能。</td>
@@ -196,7 +189,8 @@
 <thead>
 <tr><th>名称</th><th>来源</th><th>描述</th></tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><strong>ima-knowledge-base</strong></td>
 <td>Store</td>
 <td>通过 IMA OpenAPI 处理知识库任务。支持知识库内容搜索、命中详情查看、条目浏览、列出知识库、上传文件、导入网页。用户提到知识库、资料库、上传到知识库、导入网页、搜知识库时使用。</td>
@@ -218,7 +212,8 @@
 <thead>
 <tr><th>名称</th><th>来源</th><th>描述</th></tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><strong>cron-manager</strong></td>
 <td>Store</td>
 <td>定时任务管理。创建、查看、修改、删除定时任务，管理任务会话数据。当用户需要设置提醒、定时执行任务、管理调度计划时使用。</td>
@@ -235,7 +230,8 @@
 <thead>
 <tr><th>名称</th><th>来源</th><th>描述</th></tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><strong>gh-cli</strong></td>
 <td>Store</td>
 <td>GitHub CLI 完整参考手册。覆盖仓库、Issue、Pull Request、Actions、Projects、Releases、Gists、Codespaces、组织管理、扩展等所有 GitHub 命令行操作。当用户需要操作 GitHub 仓库、管理 Issue/PR、配置 CI/CD、部署 Release 时使用。</td>
@@ -252,7 +248,8 @@
 <thead>
 <tr><th>名称</th><th>来源</th><th>描述</th></tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><strong>mattpocock-skills</strong></td>
 <td>Store</td>
 <td>Matt Pocock 出品的工程技能集合。包含审查确认（grill-me/grill-with-docs）、测试驱动开发（tdd）、诊断调试（diagnose）、架构改进（improve-codebase-architecture）、原型设计（prototype）等专业工程实践技能。</td>
@@ -276,7 +273,7 @@
 </tbody>
 </table>
 <div class="footer">
-  <p>自动生成 2026-05-18 17:24:05 | 基于 skills-manager 中央仓库</p>
+  <p>自动生成 2026-05-18 17:32:51 | 基于 skills-manager 中央仓库</p>
   <p>由 skills-manager 中央仓库驱动</p>
 </div>
 </body>
