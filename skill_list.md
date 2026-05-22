@@ -1,6 +1,6 @@
 # skills-manager 中央仓库 — 全量技能清单
 
-> 自动生成: 2026-05-21
+> 自动生成: 2026-05-22
 
 ## 浏览器与自动化
 
@@ -15,6 +15,7 @@
 
 | Name | Source | Description |
 |------|--------|-------------|
+| **agent-reach** | Store | > |
 | **agent-team-manager** | Store | 多智能体团队管理。创建、查看、修改、删除 CountBot 的多智能体团队，管理团队成员（角色）和团队级自定义模型配置。当用户要新建 Pipeline/Graph/Council 团队、调整成员分工、修改依赖关系、开关技能系统、设置团队专属模型时使用。 |
 | **baidu-search** | Store | 百度 AI 搜索。支持网页搜索、百度百科、秒懂百科、AI 智能生成四种模式。自动包含当前日期上下文。当用户要求搜索信息、查询百科、获取最新资讯、搜索新闻、查找资料时使用。 |
 | **find-skills** | Store | 最高优先级的技能发现流程。当用户要求查找或安装技能时必须触发此技能。对于中文用户，优先使用SkillHub（更快且合规），无匹配时回退到ClawHub。 |
@@ -42,10 +43,10 @@
 | **huashu-md-html** | Store | 花叔的「md/html/docx 多向流水线」skill，四个能力 + 两种模式：(1) 用Microsoft markitdown把任意文件（PDF/DOCX/PPTX/XLSX/HTML/图片/音频/YouTube/EPub/ZIP）转成干净的md；(2) 用Pandoc + 4套精挑模板把md加工成出色的html——**兜底模式**（不耗token，pandoc 一键套版）+ **视觉艺术设计师模式**（AI 读懂内容、推荐 3 个差异化方向、为内容定制视觉表达），继承huashu-design的反AI slop审美；(3) 用html-to-markdown + trafilatura把html或URL无损转回md；(4) 用python-docx把md加工成出版社级docx（专业排版+自动嵌图+封面目录页眉页脚，专用于纸质书审校/投稿/出版交付）。落地花叔的「md生产，多端消费」方法论。触发词：md转html、html转md、pdf转md、docx转md、pptx转md、xlsx转md、文件转md、URL转md、文档转md、转markdown、做html、生成html、网页转md、import文档、导入md、导出html、md to html、html to md、any to md、md转docx、md to docx、生成docx、做word文档、出版社审校、投稿、纸质书、出版稿、交付docx、book、出色的html、定制html设计、做个好看的网页、设计师模式、几种风格、推荐设计方向、markitdown、pandoc、python-docx。即使用户只是说「这个PDF变md」「这篇md做成网页」「这个网页存下来」「把这些md做成可投稿的word」「给出版社一份审校稿」「给这个md做个出色的html」「让我看看几种风格」也应触发。 |
 | **kami** | Store | 专业文档排版工具。支持简历、一页纸、白皮书、信函、作品集、幻灯片等文档类型。暖色调羊皮纸风格，墨蓝色强调色，衬线字体层级。中文仓耳今楷，英文Charter，日文YuMincho。 |
 | **markitdown** | Store | 文件与办公文档转Markdown格式转换器。支持PDF、DOCX、PPTX、XLSX、图片（OCR识别）、音频（语音转录）、HTML、CSV、JSON、XML、ZIP压缩包、YouTube链接、EPub电子书等多种格式。 |
-| **minimax-docx** | Store | minimax-docx |
-| **minimax-pdf** | Store | minimax-pdf |
+| **minimax-docx** | Store | > |
+| **minimax-pdf** | Store | > |
 | **PDF Generator** | Store | 从Markdown、HTML、数据或代码生成专业PDF文档。支持报告、发票、合同、文档等类型，遵循最佳实践。 |
-| **pptx-generator** | Store | pptx-generator |
+| **pptx-generator** | Store | "Generate, edit, and read PowerPoint presentations. Create from scratch with PptxGenJS (cover, TOC, content, section divider, summary slides), edit existing PPTX via XML workflows, or extract text with markitdown. Triggers: PPT, PPTX, PowerPoint, presentation, slide, deck, slides." |
 | **summarize** | Store | 快速摘要 CLI 工具。支持对网页 URL、PDF 文档、图片、音频文件、YouTube 链接等内容一键生成摘要。当用户需要快速获取网页/文档/视频的核心内容摘要时使用。 |
 | **web-design** | Store | 网页设计与部署。生成精美的单页 HTML 网页（报告、落地页、数据可视化等），支持一键部署到 Cloudflare Pages。使用 Tailwind CSS + Chart.js + Font Awesome 技术栈。当用户要求制作网页、生成报告页面、创建落地页、数据可视化展示、部署网页到线上时使用。 |
 
@@ -53,9 +54,9 @@
 
 | Name | Source | Description |
 |------|--------|-------------|
-| **gif-sticker-maker** | Store | gif-sticker-maker |
+| **gif-sticker-maker** | Store | \ |
 | **image-analysis** | Store | 图片分析与识别，可分析本地图片、网络图片、视频、文件。适用于 OCR、物体识别、场景理解等。当用户发送图片或要求分析图片时必须使用此技能。 |
-| **vision-analysis** | Store | vision-analysis |
+| **vision-analysis** | Store | > |
 
 ## 知识库与笔记
 
@@ -63,38 +64,38 @@
 |------|--------|-------------|
 | **ima-knowledge-base** | Store | 通过 IMA OpenAPI 处理知识库任务。支持知识库内容搜索、命中详情查看、条目浏览、列出知识库、上传文件、导入网页。用户提到知识库、资料库、上传到知识库、导入网页、搜知识库时使用。 |
 | **ima-notes** | Store | 通过 IMA OpenAPI 处理笔记任务。支持搜索笔记、读取笔记、列出笔记、新建笔记、追加笔记。用户提到笔记、备忘录、记一下、追加到某篇笔记时使用。 |
-| **minimax-music-gen** | Store | minimax-music-gen |
-| **minimax-music-playlist** | Store | minimax-music-playlist |
-| **minimax-xlsx** | Store | minimax-xlsx |
+| **minimax-music-gen** | Store | > |
+| **minimax-music-playlist** | Store | > |
+| **minimax-xlsx** | Store | "Open, create, read, analyze, edit, or validate Excel/spreadsheet files (.xlsx, .xlsm, .csv, .tsv). Use when the user asks to create, build, modify, analyze, read, validate, or format any Excel spreadsheet, financial model, pivot table, or tabular data file. Covers: creating new xlsx from scratch, reading and analyzing existing files, editing existing xlsx with zero format loss, formula recalculation and validation, and applying professional financial formatting standards. Triggers on 'spreadsheet', 'Excel', '.xlsx', '.csv', 'pivot table', 'financial model', 'formula', or any request to produce tabular data in Excel format." |
 
 ## 开发与构建
 
 | Name | Source | Description |
 |------|--------|-------------|
-| **android-native-dev** | Store | android-native-dev |
+| **android-native-dev** | Store | Android native application development and UI design guide. Covers Material Design 3, Kotlin/Compose development, project configuration, accessibility, and build troubleshooting. Read this before Android native application development. |
 | **cron-manager** | Store | 定时任务管理。创建、查看、修改、删除定时任务，管理任务会话数据。当用户需要设置提醒、定时执行任务、管理调度计划时使用。 |
-| **flutter-dev** | Store | flutter-dev |
-| **frontend-dev** | Store | frontend-dev |
-| **fullstack-dev** | Store | fullstack-dev |
-| **ios-application-dev** | Store | ios-application-dev |
+| **flutter-dev** | Store | \ |
+| **frontend-dev** | Store | \ |
+| **fullstack-dev** | Store | \ |
+| **ios-application-dev** | Store | \ |
 | **mcp-builder** | Store | 高质量MCP（模型上下文协议）服务器构建指南。使大语言模型能通过精心设计的工具与外部服务交互。适用于构建集成外部API或服务的MCP服务器，支持Python（FastMCP）或Node/TypeScript（MCP SDK）技术栈。 |
-| **react-native-dev** | Store | react-native-dev |
-| **shader-dev** | Store | shader-dev |
+| **react-native-dev** | Store | \ |
+| **shader-dev** | Store | Comprehensive GLSL shader techniques for creating stunning visual effects — ray marching, SDF modeling, fluid simulation, particle systems, procedural generation, lighting, post-processing, and more. |
 
 ## 工具与命令行
 
 | Name | Source | Description |
 |------|--------|-------------|
 | **git-commit** | Store | 约定式提交辅助工具。自动分析代码变更 diff，智能判断提交类型（feat/fix/docs 等）和范围，生成符合规范的提交信息。支持交互式自定义覆盖。当用户输入 /commit 或要求提交代码时使用。 |
-| **mmx-cli** | Store | mmx-cli |
+| **mmx-cli** | Store | Use mmx to generate text, images, video, speech, and music via the MiniMax AI platform. Use when the user wants to create media content, chat with MiniMax models, perform web search, or manage MiniMax API resources from the terminal. |
 
 ## 其他工具
 
 | Name | Source | Description |
 |------|--------|-------------|
-| **buddy-sings** | Store | buddy-sings |
-| **site-memory** | Store | site-memory |
+| **buddy-sings** | Store | > |
+| **site-memory** | Store | \ |
 
 ---
 
-**总计**: 48 | **来源**: skills-manager central repository
+**总计**: 49 | **来源**: skills-manager central repository
